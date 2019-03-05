@@ -6,7 +6,7 @@ import (
 
 	"os"
 
-	pb "github.com/JekaTka/microservices-in-golang/vessel-service/proto/vessel"
+	pb "github.com/JekaTka/shippy-vessel-service/proto/vessel"
 	"github.com/micro/go-micro"
 )
 

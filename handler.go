@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	pb "github.com/JekaTka/microservices-in-golang/vessel-service/proto/vessel"
+	pb "github.com/JekaTka/shippy-vessel-service/proto/vessel"
 	"gopkg.in/mgo.v2"
 )
 

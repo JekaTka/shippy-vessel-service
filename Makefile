@@ -1,5 +1,5 @@
 build:
-	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/JekaTka/microservices-in-golang/vessel-service proto/vessel/vessel.proto
+	protoc -I. --go_out=plugins=micro:$(GOPATH)/src/github.com/JekaTka/shippy-vessel-service proto/vessel/vessel.proto
 	docker build -t vessel-service .
 
 run:

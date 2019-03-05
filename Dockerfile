@@ -1,6 +1,6 @@
 FROM golang:latest as builder
 
-WORKDIR /go/src/github.com/JekaTka/microservices-in-golang/vessel-service
+WORKDIR /go/src/github.com/JekaTka/shippy-vessel-service
 
 COPY . .
 
@@ -15,6 +15,6 @@ RUN apk --no-cache add ca-certificates
 
 RUN mkdir /app
 WORKDIR /app
-COPY --from=builder /go/src/github.com/JekaTka/microservices-in-golang/vessel-service .
+COPY --from=builder /go/src/github.com/JekaTka/shippy-vessel-service .
 
 CMD ["./vessel-service"]
