@@ -4,8 +4,7 @@ WORKDIR /go/src/github.com/JekaTka/shippy-vessel-service
 
 COPY . .
 
-RUN go get -u github.com/golang/dep/cmd/dep
-RUN dep ensure -update
+RUN go get
 RUN CGO_ENABLED=0 GOOS=linux go build -o vessel-service -a -installsuffix cgo main.go repository.go handler.go datastore.go
 
 
